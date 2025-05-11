@@ -1,46 +1,46 @@
 {
-  "name": "forest-travel",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build && next export",
-    "start": "next start",
-    "clean": "rm -rf .next dist node_modules",
-    "lint": "pnpm biome lint ./src",
-    "lint:fix": "pnpm biome lint --write ./src",
-    "fmt": "pnpm biome format ./src",
-    "fmt:fix": "pnpm biome format --write ./src",
-    "analyze": "next build",
-    "typecheck": "tsc --noEmit",
-    "sortcn": "pnpm prettier ./src --write",
-    "prepare": "husky"
-  },
-  "lint-staged": {
-    "*.{ts,tsx}": [
-      "pnpm biome check --write --no-errors-on-unmatched"
-    ]
-  },
-  "dependencies": {
-    "clsx": "^2.1.1",
-    "lucide-react": "^0.509.0",
-    "next": "15.3.2",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "tailwind-merge": "^3.2.0"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "1.9.4",
-    "@eslint/eslintrc": "^3",
-    "@tailwindcss/postcss": "^4",
-    "@tailwindcss/typography": "^0.5.16",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "15.3.2",
-    "husky": "^9.1.7",
-    "tailwindcss": "^4",
-    "typescript": "^5"
-  }
+    "name": "forest-travel",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev --turbopack",
+        "build": "next build",
+        "start": "next start",
+        "clean": "rm -rf .next dist node_modules",
+        "lint": "pnpm biome lint ./src",
+        "lint:fix": "pnpm biome lint --write ./src",
+        "fmt": "pnpm biome format ./src",
+        "fmt:fix": "pnpm biome format --write ./src",
+        "analyze": "next build",
+        "typecheck": "tsc --noEmit",
+        "sortcn": "pnpm prettier ./src --write",
+        "prepare": "husky"
+    },
+    "lint-staged": {
+        "*.{ts,tsx}": [
+            "pnpm biome check --write --no-errors-on-unmatched"
+        ]
+    },
+    "dependencies": {
+        "clsx": "^2.1.1",
+        "lucide-react": "^0.509.0",
+        "next": "15.3.2",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0",
+        "tailwind-merge": "^3.2.0"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "1.9.4",
+        "@eslint/eslintrc": "^3",
+        "@tailwindcss/postcss": "^4",
+        "@tailwindcss/typography": "^0.5.16",
+        "@types/node": "^20",
+        "@types/react": "^19",
+        "@types/react-dom": "^19",
+        "eslint": "^9",
+        "eslint-config-next": "15.3.2",
+        "husky": "^9.1.7",
+        "tailwindcss": "^4",
+        "typescript": "^5"
+    }
 }
