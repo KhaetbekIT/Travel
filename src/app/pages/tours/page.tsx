@@ -1,9 +1,12 @@
 import { Container } from "@/components/container";
+import { Content } from "./_components/content";
 
 const Page = () => {
 	return (
 		<section>
-			<Container>ok</Container>
+			<Container>
+				<Content />
+			</Container>
 		</section>
 	);
 };
