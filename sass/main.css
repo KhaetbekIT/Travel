@@ -172,9 +172,10 @@ img {
   margin-bottom: 40px;
 }
 .main .article__text a {
-  color: #138ECE;
+  color: #138ece;
 }
-.main .article__text b, .main .article__text strong {
+.main .article__text b,
+.main .article__text strong {
   color: #31405B;
 }
 .main .article__image {
@@ -217,6 +218,9 @@ img {
   justify-content: flex-end;
 }
 
+.widget {
+  max-width: 270px;
+}
 .widget__title {
   font-size: 24px;
   margin-bottom: 30px;

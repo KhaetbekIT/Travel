@@ -52,7 +52,6 @@
     }
 }
 
-
 .logo {
     color: white;
     font-size: 40px;
@@ -62,7 +61,6 @@
     font-size: 24px;
 }
 
-
 .title {
     @extend .pt-sans-bold;
     font-size: 60px;
@@ -70,38 +68,33 @@
 
 .main {
     padding: 120px 0;
-    
+
     & > * + * {
         margin-top: 120px;
     }
 
-     & > *:nth-child(even) {
-                .article__row {
-                    flex-direction: row-reverse;
-                }
-            }
+    & > *:nth-child(even) {
+        .article__row {
+            flex-direction: row-reverse;
+        }
+    }
 
     .article {
-
         &__row {
             display: flex;
             justify-content: space-between;
             flex-shrink: 0;
-           
-          
         }
 
         &__content {
             width: 470px;
         }
 
-
         &__title {
             @extend .pt-sans-bold;
             font-size: 54px;
             color: $secondary;
             margin-bottom: 20px;
-    
         }
 
         &__text {
@@ -110,17 +103,17 @@
             margin-bottom: 40px;
 
             a {
-                color: #138ECE;
+                color: #138ece;
             }
 
-            b, strong {
+            b,
+            strong {
                 color: $secondary;
             }
         }
 
         &__image {
             width: 570px;
-            
         }
 
         &__link {
@@ -135,10 +128,7 @@
                 text-decoration: underline;
             }
         }
-      
     }
-
-    
 }
 
 .footer {
@@ -147,10 +137,9 @@
     color: white;
 
     &__copyright {
-       width: 270px;
+        width: 270px;
         & > * + * {
             margin-top: 26px;
-            
         }
         &-text {
             font-size: 16px;
@@ -167,11 +156,11 @@
     &__widgets {
         display: flex;
         justify-content: flex-end;
-        
     }
 }
 
 .widget {
+    max-width: 270px;
     &__title {
         font-size: 24px;
         @extend %fontBold;
@@ -182,7 +171,6 @@
         color: white;
         text-decoration: none;
         font-size: 18px;
-
 
         &:hover {
             text-decoration: underline;
@@ -198,5 +186,3 @@
         }
     }
 }
-
-
