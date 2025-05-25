@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+.lobster-regular, .pt-sans-bold, .title, .pt-sans-regular, html,
+body {
+  font-style: normal;
+}
+
+.pt-sans-bold-italic, .pt-sans-regular-italic {
+  font-style: italic;
+}
+
+.lobster-regular, .pt-sans-regular-italic, .pt-sans-regular, html,
+body {
+  font-weight: 400;
+}
+
+.pt-sans-bold-italic, .pt-sans-bold, .title {
+  font-weight: 700;
+}
+
+.pt-sans-bold-italic, .pt-sans-regular-italic, .pt-sans-bold, .title, .pt-sans-regular, html,
+body {
+  font-family: "PT Sans", sans-serif;
+}
+
+.lobster-regular {
+  font-family: "Lobster", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button,
+a,
+label,
+textarea,
+input,
+select,
+span {
+  display: inline-block;
+  font-family: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+html,
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+.sticky-footer {
+  display: flex;
+  flex-direction: column;
+}
+.sticky-footer > main {
+  flex-grow: 1;
+}
+.sticky-footer > * {
+  flex-shrink: 0;
+}
+
+button,
+a,
+label,
+textarea,
+input,
+select {
+  cursor: pointer;
+  border: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  height: 800px;
+  background: #265847;
+  padding-top: 50px;
+}
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.header__nav {
+  color: white;
+}
+.header__nav > * + * {
+  margin-left: 50px;
+}
+.header__nav-link {
+  font-size: 22px;
+  text-decoration: none;
+}
+.header__nav-link:hover {
+  text-decoration: underline;
+}
+.header__content {
+  padding-top: 244px;
+  text-align: center;
+  color: white;
+}
+.header__content > * + * {
+  margin-top: 20px;
+}
+
+.logo {
+  color: white;
+  font-size: 40px;
+}
+
+.subtitle {
+  font-size: 24px;
+}
+
+.title {
+  font-size: 60px;
+}/*# sourceMappingURL=main.css.map */

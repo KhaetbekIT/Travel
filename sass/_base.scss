@@ -1,0 +1,70 @@
+%reset {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+%resetElement {
+    display: inline-block;
+    font-family: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+
+* {
+    @extend %reset;
+}
+
+html,
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+
+    @extend .pt-sans-regular;
+}
+
+.sticky-footer {
+    display: flex;
+    flex-direction: column;
+
+    & > main {
+        flex-grow: 1;
+    }
+
+    & > * {
+        flex-shrink: 0;
+    }
+}
+
+button,
+a,
+label,
+textarea,
+input,
+select,
+span {
+    @extend %resetElement;
+}
+
+button,
+a,
+label,
+textarea,
+input,
+select {
+    cursor: pointer;
+    border: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.container {
+    width: $container;
+    margin: 0 auto;
+    padding: 0 $container-padding;
+}
