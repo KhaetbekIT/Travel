@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+%fontNormal {
+    font-style: normal;
+}
+
+%fontItalic {
+    font-style: italic;
+}
+
+%fontRegular {
+    font-weight: 400;
+}
+
+%fontBold {
+    font-weight: 700;
+}
+
+%ptSans {
+    font-family: "PT Sans", sans-serif;
+}
+
+.pt-sans-regular {
+    @extend %ptSans;
+    @extend %fontRegular;
+    @extend %fontNormal;
+}
+
+.pt-sans-bold {
+    @extend %ptSans;
+    @extend %fontBold;
+    @extend %fontNormal;
+}
+
+.pt-sans-regular-italic {
+    @extend %ptSans;
+    @extend %fontRegular;
+    @extend %fontItalic;
+}
+
+.pt-sans-bold-italic {
+    @extend %ptSans;
+    @extend %fontBold;
+    @extend %fontItalic;
+}
+
+.lobster-regular {
+    font-family: "Lobster", sans-serif;
+    @extend %fontRegular;
+    @extend %fontNormal;
+}
