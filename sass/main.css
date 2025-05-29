@@ -84,6 +84,10 @@ img {
   padding: 0 15px;
 }
 
+.page {
+  background: #F2F8F6;
+}
+
 .header {
   position: relative;
   height: 900px;
@@ -238,4 +242,140 @@ img {
 }
 .widget__links > * + * {
   margin-top: 20px;
+}
+
+.page-main {
+  padding: 60px 0 100px;
+}
+
+.page-header {
+  background: url("../images/tour-header-bg.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 25px 0;
+}
+
+.title-2 {
+  text-align: center;
+  font-size: 54px;
+  color: #31405B;
+  margin-bottom: 60px;
+}
+
+.tours_image {
+  flex: 1;
+}
+
+.tours__images-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.tours__images-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex: 1;
+}
+
+.tours__images-vertical img {
+  margin-top: 30px;
+}
+
+.tours_image img,
+.tours_image1 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.tours_image1 {
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 30px;
+  max-width: 470px;
+  flex-shrink: 0;
+  height: 680px;
+}
+
+.layout {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 125px;
+}
+
+.title-3 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 28px;
+  color: #31405B;
+}
+
+.side__nav {
+  padding-top: 71px;
+  width: 270px;
+  flex-shrink: 0;
+}
+
+.side__nav a {
+  margin-bottom: 25px;
+  font-size: 20px;
+  color: #138ECE;
+}
+
+.side__nav a::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #138ECE;
+  margin-top: 20px;
+  width: 270px;
+  background-color: #D6D9D8;
+}
+
+.side__nav-link:hover {
+  color: #E04E4E;
+}
+
+.page-main {
+  flex: 1;
+  overflow: hidden;
+}
+
+.title-1 {
+  margin-bottom: 40px;
+  text-align: right;
+}
+
+.main-title-1 {
+  margin-top: 30px;
+  font-size: 32px;
+  line-height: 1.6;
+}
+
+.main-title-2 {
+  margin-top: 30px;
+  font-size: 26px;
+  line-height: 1.6;
+}
+
+.main-title-3 {
+  margin-top: 30px;
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+.page-main p {
+  max-width: 770px;
+  font-size: 20px;
+  color: #31405B;
+  line-height: 1.6;
+  margin-top: 15px;
+}
+
+.page-main p span {
+  color: #138ECE;
 }/*# sourceMappingURL=main.css.map */
