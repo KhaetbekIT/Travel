@@ -18,6 +18,10 @@
 .tours_image {
   flex: 1;
 }
+
+.tours__images > * + * {
+  margin-top: 24px;
+}
  
 .tours__images-row {
   display: flex;
@@ -33,11 +37,6 @@
   flex: 1;
 }
 
-.tours__images-vertical img {
-    margin-top: 30px;
- 
-  
-}
 
 .tours_image img,
 .tours_image1 img {
@@ -50,8 +49,6 @@
 
 .tours_image1 {
     object-fit: cover;
-    
-    margin-top: 30px;
     max-width: 470px;
     flex-shrink: 0;
     height: 680px;
