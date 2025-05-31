@@ -1,94 +1,65 @@
-.layout {
-  display: flex;
-  gap: 40px;
-  margin-bottom: 125px;
-  
-}
-
 .title-3 {
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 28px;
-  color: #31405B;
+    font-size: 28px;
+    font-weight: bold;
+    color: #31405b;
 }
 
-.side__nav {
-  padding-top: 71px;
-  width: 270px;
-  flex-shrink: 0;
+.article {
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        flex-shrink: 0;
+    }
+
+    &__sidebar {
+        width: 270px;
+
+        & > * + * {
+            margin-top: 34px;
+        }
+    }
+
+    &__nav {
+        border-top: 1px solid $sidebarLine;
+        border-bottom: 1px solid $sidebarLine;
+
+        &-link {
+            display: inline-block;
+            padding: 18px 0;
+            width: 100%;
+
+            &.active,
+            &:hover {
+                color: #e04e4e;
+            }
+        }
+
+        & > * + * {
+            border-top: 1px solid $sidebarLine;
+        }
+    }
+
+    &__content {
+        width: 770px;
+
+        font-size: 20px;
+        line-height: 1.6;
+
+        a {
+            color: #138ece;
+        }
+
+        b,
+        strong {
+            color: $secondary;
+        }
+    }
+
+    &__description {
+        text-align: justify;
+
+        & > * + * {
+            margin-top: 40px;
+        }
+    }
 }
-
-.side__nav a {
-  margin-bottom: 25px;
-  font-size: 20px;
-  color: #138ECE;
-}
-
-.side__nav a::after {
-  content: "";
-  display: block;
-  height: 1px;
-  background-color: #138ECE;
-  margin-top: 20px;
-  width: 270px;
-  background-color: #D6D9D8;
-}
- 
-.side__nav-link:hover {
-  color: #E04E4E;
-}
-
-.side__nav-link.active {
-  color: #E04E4E;
-}
-
-.page-main {
-  flex: 1;
-  overflow: hidden;
-}
-
-.title-1 {
-  margin-bottom: 40px;
-  text-align: right;
-}
-
-.main-title-1 {
-  margin-top: 30px;
-  font-size: 32px;
-  line-height: 1.6;
-}
-
-.main-title-2 {
-  margin-top: 30px;
-  font-size: 26px;
-  line-height: 1.6;
-}
-
-.tracks-image {
-  margin: 30px 0;
-  width: 771px;
-  height: 316px;
-}
-
-
-.main-title-3 {
-  margin-top: 30px;
-  font-size: 22px;
-  line-height: 1.6;
-}
-
-
-.page-main p {
-  max-width: 770px;
-  font-size: 20px;
-  color: #31405B;
-  line-height: 1.6;
-  margin-top: 15px;
-
-}
-
-.page-main p span {
-  color: #138ECE;
-}
-
-
