@@ -1,0 +1,69 @@
+.title-3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #31405b;
+}
+
+.article {
+    align-items: center;
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        flex-shrink: 0;
+    
+    }
+
+    &__sidebar {
+        width: 270px;
+
+        & > * + * {
+            margin-top: 34px;
+        }
+    }
+
+    &__nav {
+        border-top: 1px solid $sidebarLine;
+        border-bottom: 1px solid $sidebarLine;
+
+        &-link {
+            display: inline-block;
+            padding: 18px 0;
+            width: 100%;
+            color: #138ECE;
+            font-size: 20px;
+            
+            &.active,
+            &:hover {
+                color: #e04e4e;
+            }
+        }
+
+        & > * + * {
+            border-top: 1px solid $sidebarLine;
+        }
+    }
+
+    &__content {
+        width: 770px;
+
+        font-size: 20px;
+        line-height: 1.6;
+
+        a {
+            color: #138ece;
+        }
+
+        b,
+        strong {
+            color: $secondary;
+        }
+    }
+
+    &__description {
+        text-align: justify;
+
+        & > * + * {
+            margin-top: 30px;
+        }
+    }
+}
