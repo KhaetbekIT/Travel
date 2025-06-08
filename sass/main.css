@@ -1,31 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-.lobster-regular, .pt-sans-bold, .main .article__title, .title, .pt-sans-regular, html,
-body {
-  font-style: normal;
-}
-
-.pt-sans-bold-italic, .pt-sans-regular-italic {
-  font-style: italic;
-}
-
-.lobster-regular, .pt-sans-regular-italic, .pt-sans-regular, html,
-body {
-  font-weight: 400;
-}
-
-.widget__title, .pt-sans-bold-italic, .pt-sans-bold, .main .article__title, .title {
-  font-weight: 700;
-}
-
-.pt-sans-bold-italic, .pt-sans-regular-italic, .pt-sans-bold, .main .article__title, .title, .pt-sans-regular, html,
-body {
-  font-family: "PT Sans", sans-serif;
-}
-
-.lobster-regular {
-  font-family: "Lobster", sans-serif;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -88,6 +61,33 @@ img {
   background: #F2F8F6;
 }
 
+.lobster-regular, .pt-sans-bold, .main .article__title, .title, .pt-sans-regular, html,
+body {
+  font-style: normal;
+}
+
+.pt-sans-bold-italic, .pt-sans-regular-italic {
+  font-style: italic;
+}
+
+.lobster-regular, .pt-sans-regular-italic, .pt-sans-regular, html,
+body {
+  font-weight: 400;
+}
+
+.widget__title, .pt-sans-bold-italic, .pt-sans-bold, .main .article__title, .title {
+  font-weight: 700;
+}
+
+.pt-sans-bold-italic, .pt-sans-regular-italic, .pt-sans-bold, .main .article__title, .title, .pt-sans-regular, html,
+body {
+  font-family: "PT Sans", sans-serif;
+}
+
+.lobster-regular {
+  font-family: "Lobster", sans-serif;
+}
+
 .header {
   position: relative;
   height: 900px;
@@ -122,7 +122,7 @@ img {
 .header__content > * + * {
   margin-top: 20px;
 }
-.header__scrolls {
+.header__content__scrolls {
   position: absolute;
   bottom: 20px;
   left: 50%;
@@ -244,6 +244,42 @@ img {
   margin-top: 20px;
 }
 
+@media screen and (min-width: 900px) and (max-width: 1199px) {
+  .header__nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    padding: 50px 40px;
+    flex-direction: column;
+    overflow-y: auto;
+    z-index: 49;
+  }
+  .header__nav.open {
+    display: flex !important;
+  }
+  .header__nav-link {
+    margin-bottom: 30px;
+    color: #faf6f2;
+    text-decoration: none;
+  }
+}
+.header__nav ul {
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+@keyframes burgerAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .page-main {
   padding: 60px 0 100px;
 }
@@ -590,4 +626,101 @@ img {
   color: #FFFFFF;
   background: #0AC883;
   border-radius: 50px;
+}
+
+.open {
+  display: flex !important;
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  .header {
+    height: 591px;
+  }
+}
+.header__burger {
+  display: none;
+  position: relative;
+  width: 30px;
+  height: 18px;
+  align-items: center;
+  justify-content: flex-end;
+  cursor: pointer;
+  z-index: 50;
+}
+@media (min-width: 900px) and (max-width: 1199px) {
+  .header__burger {
+    display: flex;
+  }
+}
+.header .header__burger span {
+  height: 2px;
+  width: 80%;
+  transform: scale(1);
+  background-color: #faf6f2;
+}
+.header .header__burger::before,
+.header .header__burger::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #faf6f2;
+  transition: all 0.3s ease 0s;
+}
+.header .header__burger::before {
+  top: 0;
+}
+.header .header__burger::after {
+  bottom: 0;
+}
+.header .header__burger.active span {
+  transform: scale(0);
+}
+.header .header__burger.active::before {
+  top: 50%;
+  transform: rotate(-45deg) translate(0, -50%);
+}
+.header .header__burger.active::after {
+  bottom: 50%;
+  transform: rotate(45deg) translate(0, 50%);
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  .header__nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    padding: 50px 40px;
+    flex-direction: column;
+    overflow-y: auto;
+    z-index: 49;
+  }
+  .header__nav.open {
+    display: flex !important;
+  }
+  .header__nav-link {
+    margin-bottom: 30px;
+    color: #faf6f2;
+    text-decoration: none;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  .header__nav ul {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}
+
+@keyframes burgerAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=main.css.map */

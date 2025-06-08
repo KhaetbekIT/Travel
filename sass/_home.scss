@@ -14,6 +14,7 @@
 
   &__nav {
     color: white;
+
     & > * + * {
       margin-left: 50px;
     }
@@ -36,19 +37,19 @@
     & > * + * {
       margin-top: 20px;
     }
-  }
 
-  &__scrolls {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    font-size: 18px;
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    &__scrolls {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      font-size: 18px;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
   }
 }
 
@@ -187,5 +188,46 @@
   }
 }
 
+@media screen and (min-width: 900px) and (max-width: 1199px) {
+.header {
+
+}
+  .header__nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    padding: 50px 40px;
+    flex-direction: column;
+    overflow-y: auto;
+    z-index: 49;
+
+    &.open {
+      display: flex !important;
+    }
+
+    &-link {
+      margin-bottom: 30px;
+      color: #faf6f2;
+      text-decoration: none;
+    }
+  }
+}
+
+.header__nav ul {
+    flex-direction: column;
+    row-gap: 30px;
+  }
 
 
+@keyframes burgerAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
