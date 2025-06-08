@@ -1,13 +1,16 @@
 $primary: #265847;
-$secondary: #31405B;
-$green: #0AC883;
-$page-background: #F2F8F6;
-$sidebarLine:#D6D9D8;
-
-
-
+$secondary: #31405b;
+$green: #0ac883;
+$page-background: #f2f8f6;
+$sidebarLine: #d6d9d8;
 
 // container
 $container-width: 1170px;
 $container-padding: 15px;
 $container: $container-width + ($container-padding * 2);
+
+// Responsive breakpoints
+$laptop: 1200px;
+$tablet: 900px;
+$mobile: 600px;
+$mobileXS: 320px;

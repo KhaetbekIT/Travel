@@ -1,20 +1,19 @@
-@mixin respond($breakpoint) {
-  @if $breakpoint == "laptop" {
-    @media (max-width: 1200px) {
-      @content;
+@mixin Responsive($breakpoint) {
+    @if $breakpoint == "lg" {
+        @media (min-width: $laptop) {
+            @content;
+        }
+    } @else if $breakpoint == "md" {
+        @media (min-width: $tablet) {
+            @content;
+        }
+    } @else if $breakpoint == "sm" {
+        @media (min-width: $mobile) {
+            @content;
+        }
+    } @else if $breakpoint == "xs" {
+        @media (min-width: $mobileXS) {
+            @content;
+        }
     }
-  } @else if $breakpoint == "tablet" {
-    @media (min-width: 900px) and (max-width: 1199px) {
-      @content;
-    }
-  } @else if $breakpoint == "mobile" {
-    @media (min-width: 600px) and (max-width: 899px) {
-      @content;
-    }
-  } @else if $breakpoint == "mobile XS" {
-    @media (min-width: 320px) and (max-width: 599px) {
-      @content;
-    }
-  }
 }
-
