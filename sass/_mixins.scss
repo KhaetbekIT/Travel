@@ -1,0 +1,19 @@
+@mixin Responsive($breakpoint) {
+    @if $breakpoint == "lg" {
+        @media (min-width: $laptop) {
+            @content;
+        }
+    } @else if $breakpoint == "md" {
+        @media (min-width: $tablet) {
+            @content;
+        }
+    } @else if $breakpoint == "sm" {
+        @media (min-width: $mobile) {
+            @content;
+        }
+    } @else if $breakpoint == "xs" {
+        @media (min-width: $mobileXS) {
+            @content;
+        }
+    }
+}

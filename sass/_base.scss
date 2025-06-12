@@ -62,13 +62,58 @@ img {
     display: block;
 }
 
-
 .container {
-    width: $container;
+    width: 100%;
     margin: 0 auto;
     padding: 0 $container-padding;
+
+    @include Responsive("sm") {
+        width: (570px + ($container-padding * 2));
+    }
+
+    @include Responsive("md") {
+        width: (870px + ($container-padding * 2));
+    }
+
+    @include Responsive("lg") {
+        width: $container;
+    }
 }
 
 .page {
     background: $page-background;
+}
+
+.overlay {
+    transition: all 0.3s ease-in-out;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+
+    &.active {
+        top: 0;
+        bottom: 0;
+    }
+
+    .mobile-menu {
+        padding: 20px 0;
+
+        text-align: center;
+
+        @include Responsive("sm") {
+            padding: 20px $container-padding;
+        }
+
+        &__list {
+            color: white;
+
+            & > * + * {
+                margin-top: 20px;
+            }
+        }
+    }
 }
