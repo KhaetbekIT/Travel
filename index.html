@@ -14,15 +14,22 @@
                     </a>
 
                     <nav class="header__nav">
-                        <a href="./index.html" class="header__nav-link">Главная</a>
-
+                        <a href="./index.html" class="header__nav-link"
+                            >Главная</a
+                        >
                         <a href="./tours.html" class="header__nav-link"
                             >Туры и направления</a
                         >
                         <a href="#!" class="header__nav-link">О компании</a>
                         <a href="#!" class="header__nav-link">Галерея</a>
-                        <a href="./contacts.html" class="header__nav-link">Контакты</a>
+                        <a href="./contacts.html" class="header__nav-link"
+                            >Контакты</a
+                        >
                     </nav>
+
+                    <button type="button" class="header__burger" id="js-menu">
+                        <img src="./images/menu.svg" alt="menu" />
+                    </button>
                 </div>
 
                 <div class="header__content">
@@ -97,8 +104,9 @@
 
                             <p class="article__text">
                                 Вишенкой на торте станет поездка в Национальный
-                                парк <b>Порт-Кэмпбелл</b> через Ocean Road,
-                                которая сама по себе стоит визита в
+                                парк
+                                <b>Порт-Кэмпбелл</b> через Ocean Road, которая
+                                сама по себе стоит визита в
                                 <a href="#!">Австралию</a>. Полюбуетесь одной из
                                 главных достопримечательностей страны — скалами,
                                 которые до 1922 года были известны в народе как
@@ -185,6 +193,36 @@
             </div>
         </footer>
 
+        <div data-overlay="show" id="js-mobile-menu" class="overlay">
+            <div class="mobile-menu">
+                <ul class="mobile-menu__list">
+                    <li id="js-mobile-menu-item" class="mobile-menu__item">
+                        <a href="./index.html" class="header__nav-link"
+                            >Главная</a
+                        >
+                    </li>
+
+                    <li id="js-mobile-menu-item" class="mobile-menu__item">
+                        <a href="./index.html" class="header__nav-link"
+                            >Главная</a
+                        >
+                    </li>
+
+                    <li id="js-mobile-menu-item" class="mobile-menu__item">
+                        <a href="./index.html" class="header__nav-link"
+                            >Главная</a
+                        >
+                    </li>
+
+                    <li id="js-mobile-menu-item" class="mobile-menu__item">
+                        <a href="./index.html" class="header__nav-link"
+                            >Главная</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </div>
         <link rel="stylesheet" href="./sass/main.css" />
+        <script src="./js/script.js" defer></script>
     </body>
 </html>
